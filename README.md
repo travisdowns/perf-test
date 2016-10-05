@@ -2,15 +2,21 @@ Simple assembly program to test the performance counter results reported by perf
 
 Requires nasm.
 
-To compile:
+## To compile:
 
 make
 
-This produces three binaries: perf-test-nop, -mul and -div. In the inner loop they use no-ops, an imul and a idiv 
+## Binary Details
+
+Making the project produces three binaries in the root folder: perf-test-nop, -mul and -div. In the inner loop they use no-ops, an imul and a idiv 
 instruction respectively. The upshot is that each loop iteration takes 1 cycle, 3 cycles or ~40 cycles respectively,
 at least on modern Intel hardware. 
 
-Usage: perf-test-* N
+## Usage
+
+perf-test-nop N
+perf-test-mul N
+perf-test-div N
 
 Each binary takes an argument N from 0-99 which specifies how many loop iterations to execute. The "nop" and "mul" 
 binaries execute N * 1e9 (i.e., N billion) iterations, while the "div" binary executes N * 1e8 (i.e., N hundred 
