@@ -1,4 +1,4 @@
-Simple assembly program to test the performance counter results reported by perf.
+Simple assembly programs to test the performance counter results reported by perf, [as described here](http://stackoverflow.com/q/39864416/149138).
 
 Requires nasm.
 
