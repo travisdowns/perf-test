@@ -1,0 +1,8 @@
+# emacs temporary files
+*~
+
+# binaries
+perf-test-*
+
+# allow source
+!perf-test-*.s
