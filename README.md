@@ -14,9 +14,9 @@ at least on modern Intel hardware.
 
 ## Usage
 
-perf-test-nop N
-perf-test-mul N
-perf-test-div N
+    perf-test-nop N
+    perf-test-mul N
+    perf-test-div N
 
 Each binary takes an argument N from 0-99 which specifies how many loop iterations to execute. The "nop" and "mul" 
 binaries execute N * 1e9 (i.e., N billion) iterations, while the "div" binary executes N * 1e8 (i.e., N hundred 
